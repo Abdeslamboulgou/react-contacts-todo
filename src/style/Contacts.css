@@ -1,3 +1,6 @@
+  body{
+    background-color: rgb(142, 142, 231);
+  }
   .listitems{
     padding: 10px;
     margin:10px 10px 10px 0;
@@ -10,12 +13,11 @@
     width: 300px;
     height: 20px;
     border-radius: 10px;
-    overflow: visible;
   }  
   .listpers p{
       padding: 5px;
       position: relative;
-      color: white;
+      color: rgba(228, 235, 228, 0.582);
       font-weight: bolder;
   }
   .listpers p span{
@@ -25,17 +27,18 @@
   }
   
   .platform {
-    background-color: chocolate;
+    background-color: rgb(223, 109, 2);
   }
   .logo{
-    width: 25px;
-    height: 25px;
-    margin: 0 5px;
+    width: 40px;
+    height: 36px;
+    margin: 0 0;
+    margin-top: 2px;
     font-size: 15px;
    
   }
   .inputs{
-      background-color: rgb(212, 214, 213);
+      background-color: rgb(241, 247, 244);
       border: 0px;
       width: 200px;
       height: 50px;
@@ -47,7 +50,7 @@
   }
   .buttns{
       border-radius: 10px;
-      background-color: rgb(247, 242, 230);
+      background-color: rgb(61, 126, 248);
       height: 50px;
       width: 100px;
       border: 0px;
@@ -56,15 +59,33 @@
 
   }
   .contacts{
-      background-color: rgb(68, 64, 64);
+      background-color: rgb(232, 234, 240);
       min-height: 500px;
       width: 400px;
+      margin-top: 50px;
       margin: 50px auto;
       overflow: scroll;
   }
-  .inser-contact{
-    background-color: rgb(53, 54, 54);
-    height: 20px;
+  .inser-contact {
+    background-color: rgb(243, 171, 113);
+    height: 40px;
+    width: 210px;
+    padding: 0 20px;
     font-size: 18px; 
-    border-radius: 10px;
-  }
+    border-radius: 6px;
+    color: rgb(239, 239, 250);
+    border: 0px;
+}
+.group{
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+.mng-contacts{
+  text-align: center;
+  font-size: 40px;
+  color: rgb(4, 4, 122);
+  font-weight: bolder;
+}

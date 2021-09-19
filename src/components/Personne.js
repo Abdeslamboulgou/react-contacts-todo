@@ -6,19 +6,19 @@ function Personne(props) {
     const [ person, setPerson ] = useState('');
     function handleChange(e) {
       if(e.target.value ===' '){
-        alert(`you should add the name correct of contact !! `);
-      }  else if(e.target.value !=='') {
+        alert(`you should add the correct name of contact !! `);
+      }  else if(e.target.value !==' ') {
           setPerson(e.target.value);}
 
     }
     
     function handleSubmit(e) {
               // preventDefault do not let you add an contact without write the name in the input
-      e.preventDefault();
       if(person !== '') {
         props.handleSubmit(person);
       }
-      
+     e.preventDefault();
+
     }
     return (
       <form className='platform' onSubmit={handleSubmit}>

@@ -1,19 +1,24 @@
 import { useEffect } from 'react';
 import Contacts from './components/Contacts';
 import '../src/style/Contacts.css';
+import group from'../src/assets/group.png';
 
-function App() {
+function App(props) {
   const contacts = ["abdeslam"];
   useEffect(() => {
-    alert(`you want add contacts ! nice choice `)},[]);
+    alert(`you want add contacts ! good choice `)},[]);
   useEffect(() => {
-    // Modifiez le titre de mon onglet
-    document.title = `Contacts adds`
+    // update the title of my page
+    document.title = ` Add Contacts `
 })
   return (
-    
+    <div>
+    <p className='mng-contacts'> Manage Contacts 
+    <span>  <img src={group} className='group' alt='add-contacts'/></span>
+    </p>
     <div className='contacts' >
-        <Contacts data={contacts} />
+        <Contacts data={contacts} setContacts={props.setContacts}/>
+    </div>
     </div>
   )
 }

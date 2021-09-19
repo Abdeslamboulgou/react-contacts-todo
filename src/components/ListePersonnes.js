@@ -1,5 +1,5 @@
 import React  from "react";
-import logo from '../assets/logo.png';
+import logo from '../assets/delete.png';
 import '../style/Contacts.css';
 import FlipMove from 'react-flip-move'
 
@@ -9,14 +9,14 @@ function ListePersonnes(props) {
     const listItems = contact.map((val, index) =>
     <div className='contacs'>
       <li className='listpers' key={index}><p> 
-          <input className='inser-contact' type='text' value={val}/>
-         <span>  <img src={logo} alt='supp-contacts' className='logo' onClick={() => removeContact(val)}/></span>
+            <input className='inser-contact' type='text' value={val}/>
+            <span><img src={logo} alt='supp-contacts' className='logo' onClick={() => removeContact(val)}/></span>
          </p>
       </li>
       </div>
     );
     function removeContact(itemToBeDeleted){
-          const updatContact=[...props.contacts].filter((val) => val!==itemToBeDeleted)
+          const updatContact=[...props.data].filter((val) => val!==itemToBeDeleted)
           props.setContacts(updatContact)
 
     }

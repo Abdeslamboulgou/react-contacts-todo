@@ -14,7 +14,7 @@ function Contacts(props) {
   return(
   <div >
        <Personne handleSubmit={addPerson} />
-       <ListePersonnes data={contacts} />
+       <ListePersonnes data={contacts} setContacts={setContacts}/>
 </div>
   );
 }
